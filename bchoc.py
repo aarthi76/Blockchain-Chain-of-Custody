@@ -32,7 +32,7 @@ args = parser.parse_args()
 action = args.action
 arguements = {}
 
-
+os.environ['BCHOC_FILE_PATH'] = 'user'
 # Read using environment variable in Gradescope
 file_path = os.getenv('BCHOC_FILE_PATH')
 # file_path = "chain"
