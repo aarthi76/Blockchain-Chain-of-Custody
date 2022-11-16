@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="/static/css/login.css">
     <title>Login</title>
   </head>
 
@@ -17,10 +15,16 @@
       <div class="loginform">
         <div class="form col-sm-6 offset-sm-3">
           <form action="" method="POST" class="loginform">
-              {{form.hidden_tag()}}
-              <p>Username</p>{{form.username}}
-              <p>Password</p>{{form.password}}
-              <p>{{form.submit}}</p>
+            <input type="radio" id="edit" name="user_type" value="edit">
+            <label for="edit">Forensics Department</label><br>
+            
+            <input type="radio" id="view" name="user_type" value="view">
+            <label for="view">Case related party</label><br>
+            
+            <input type="radio" id="denied" name="user_type" value="denied">
+            <label for="denied">Other</label><br>
+            <br><br>
+            <p><button type="login" placeholder="Login">Login</button></p>
             </form>
         </div>
       </div>
