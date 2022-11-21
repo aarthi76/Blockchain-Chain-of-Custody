@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href={{-url_for('static',
+    filename='css/skin_form.css')}}>
+  </head>
+  <body>
+    <div class="formbold-main-wrapper">
+      <!-- Author: FormBold Team -->
+      <!-- Learn More: https://formbold.com -->
+
+      <div class="formbold-form-wrapper">
+        <form
+          enctype="multipart/form-data"
+          action="/skin_consult"
+          method="POST"
+          class="form_data"
+        >
+          <div class="flex flex-wrap formbold--mx-3">
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5 w-full">
+                <label for="Phone Number" class="formbold-form-label">
+                  Case ID
+                </label>
+                <input
+                  type="number"
+                  name="case_id"
+                  id="case_id"
+                  placeholder="Enter Case ID"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <label for="Age" class="formbold-form-label">
+                  Evidence No.
+                </label>
+                <input
+                  type="number"
+                  name="evd_no"
+                  id="evd_no"
+                  placeholder="Enter Evidence No."
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap formbold--mx-3">
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5 w-full">
+                <label for="Blood Group" class="formbold-form-label">
+                  Evidence Text 1
+                </label>
+                <input
+                  type="text"
+                  name="evd_t1"
+                  id="evd_t1"
+                  placeholder="Enter Evidence Text"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <label for="Blood Pressure" class="formbold-form-label">
+                  Enter Evidence Text 2 (if any)
+                </label>
+                <input
+                  type="text"
+                  name="evd_t2"
+                  id="evd_t2"
+                  placeholder="Enter Evidence Text"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="formbold-mb-5">
+            <label for="Image" class="formbold-form-label">
+              Evidence Image
+            </label>
+            <input
+              type="file"
+              name="img"
+              id="img"
+              placeholder="Enter your Blood Group"
+              class="formbold-form-input"
+            />
+          </div>
+          <div class="flex flex-wrap formbold--mx-3">
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5 w-full">
+                <label for="date" class="formbold-form-label">Date</label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <label for="time" class="formbold-form-label">Time</label>
+                <input
+                  type="time"
+                  name="time"
+                  id="time"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="formbold-btn">Add Evidence</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
