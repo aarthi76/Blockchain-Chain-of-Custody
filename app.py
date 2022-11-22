@@ -88,8 +88,8 @@ def add_evidence_block(
 ):
     w3 = Web3(Web3.HTTPProvider("HTTP://127.0.0.1:7545"))
     chain_id = 1337
-    my_address = "0xFb7eaeE42D9e83195d17eb2228139Ff24Ee32409"
-    private_key = "b4837241f739e5637107ca4ee0949ee52b4dab84346f96da0d70f4339b352be6"
+    my_address = "0x2cd75162Beb459d24177C082238F366307507aC3"
+    private_key = "c77b1638b0f7ae6a4cbca39bdad9c9b8b74af1034d3c276c19ea2a182c5bb3a5"
     ABI, BYTECODE = get_abi_bytecode()
     EvidenceContract = w3.eth.contract(abi=ABI, bytecode=BYTECODE)
     nonce = w3.eth.getTransactionCount(my_address)
